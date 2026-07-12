@@ -18,6 +18,7 @@ public class SecurityConfig {
             
             // 2. Configurar los permisos por ruta y rol
             .authorizeHttpRequests(authz -> authz
+                                
                 // Rol exclusivo que permita solo usar el endpoint de Descargar guías
                 .requestMatchers("/api/guias/*/descargar").hasAuthority("SCOPE_Descargas")
                 
@@ -30,7 +31,7 @@ public class SecurityConfig {
             
             // 3. Habilitar la validación de tokens JWT (Azure AD B2C actuará como emisor)
             .oauth2ResourceServer(oauth2 -> oauth2.jwt(jwt -> {}));
-            
+
         return http.build();
     }
 }
