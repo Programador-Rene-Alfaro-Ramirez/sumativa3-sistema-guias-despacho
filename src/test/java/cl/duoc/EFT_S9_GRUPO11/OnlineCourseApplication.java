@@ -1,11 +1,10 @@
-package cl.duoc.sistema_guias_despacho;
+package cl.duoc.EFT_S9_GRUPO11;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SistemaGuiasDespachoApplicationTests {
-
+class OnlineCourseApplication {
 	@Test
 	void contextLoads() {
 	}

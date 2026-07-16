@@ -1,4 +1,4 @@
-package cl.duoc.sistema_guias_despacho.config;
+package cl.duoc.EFT_S9_GRUPO11.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
